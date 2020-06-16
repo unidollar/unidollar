@@ -282,7 +282,7 @@ function update() {
           <div class="card-body rounded-top p-5 bg-us">
             <div class="mx-auto p-2 bg-white u-lg-avatar rounded">
 
-          <img class="flag" src="https://unidollar.network/flip/icons/${cardData[i].code}.png" alt="">
+          <img class="flag" src="https://unidollar.github.io/flip/icons/${cardData[i].code}.png" alt="">
                 </div>
               </div>
 							<div class="card-body">
