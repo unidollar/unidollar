@@ -1,0 +1,471 @@
+<!doctype html>
+<html lang="en" dir="ltr">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+		<meta name="msapplication-TileColor" content="#0061da">
+		<meta name="theme-color" content="#1643a3">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent"/>
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="mobile-web-app-capable" content="yes">
+		<meta name="HandheldFriendly" content="True">
+		<meta name="MobileOptimized" content="320">
+		<link rel="icon" href="favicon.ico" type="image/x-icon"/>
+		<link rel="shortcut icon" type="image/x-icon" href="favicon.ico" />
+
+		<!-- Title -->
+		<title>UniDollar (UNIUSD)</title>
+		<link rel="stylesheet" href="https://unidollar.network/dashboard/assets/fonts/fonts/font-awesome.min.css">
+
+		<!-- Font family -->
+		<link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,900" rel="stylesheet">
+
+		<!-- Dashboard Css -->
+		<link href="https://unidollar.network/dashboard/assets/css/dashboard.css" rel="stylesheet" />
+
+		<!-- c3.js Charts Plugin -->
+		<link href="https://unidollar.network/dashboard/assets/plugins/charts-c3/c3-chart.css" rel="stylesheet" />
+
+		<!-- Custom scroll bar css-->
+		<link href="https://unidollar.network/dashboard/assets/plugins/scroll-bar/jquery.mCustomScrollbar.css" rel="stylesheet" />
+
+		<!---Font icons-->
+        <link href="https://unidollar.network/dashboard/assets/plugins/iconfonts/plugin.css" rel="stylesheet" />
+        
+        <style>
+        .cards-image {
+                position: absolute;
+                left: 0%;
+                top: 0%;
+                right: 0%;
+                bottom: 0%;
+                width: 287px;
+                height: auto;
+                max-width: 286.65625px;
+                padding-top: 0px;
+                -o-object-fit: cover;
+                object-fit: cover;
+                -o-object-position: 50% 50%;
+                object-position: 50% 50%;
+              }
+              .cards-image-mask-2 {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  padding-top: 0%;
+  border-radius: 0%;
+}
+
+.cards-image-3 {
+  position: center;
+  left: 0%;
+  top: 0%;
+  right: 0%;
+  bottom: 0%;
+  width: 50%;
+  height: 50%;
+  max-width: none;
+  padding-top: 0px;
+  -webkit-transition: all 200ms ease;
+  transition: all 200ms ease;
+  -o-object-fit: cover;
+  object-fit: cover;
+  -o-object-position: 50% 50%;
+  object-position: 50% 50%;
+}
+
+.cards-image-3:hover {
+  padding-top: 0px;
+}
+              
+              </style>
+
+              <!--Twitter Opengraph-->
+        <meta name="twitter:card" content="summary_large_image">
+        <meta name="twitter:site" content="@UniDollarToken">
+        <meta name="twitter:creator" content="@UniDollarToken">
+        <meta name="twitter:title" content="UniDollar | Proof of Liquidity and Proof of Stake">
+        <meta name="twitter:description" content="UniDollar is the first Proof of Liquidity and Proof of Stake token.">
+        <meta name="twitter:image" content="https://i.imgur.com/uRadCDW.jpg">
+        <!--Facebook Opengraph-->
+        <meta property="og:url" content="/" />
+        <meta property="og:type" content="website" />
+        <meta property="og:title" content="UniDollar | Proof of Liquidity and Proof of Stake" />
+        <meta property="og:description" content="UniDollar is the first Proof of Liquidity and Proof of Stake token." />
+        <meta property="og:image" content="https://i.imgur.com/uRadCDW.jpg" />
+
+	</head>
+	<body class="">
+			<div id="global-loader" ></div>
+			<div class="page" >
+				<div class="page-main">
+					<div class="header py-1">
+						<div class="container">
+							<div class="d-flex">
+								<a class="header-brand" href="/dashboard">
+									<img src="https://unidollar.network/dashboard/assets/images/brand/logo01.png" class="header-brand-img" alt="UniDollar">
+								</a>
+								
+								
+									<div class="dropdown d-none d-md-flex mt-1 country-selector">
+										<a href="#" class="d-flex nav-link pr-0 leading-none" data-toggle="dropdown">
+											<span class="avatar avatar-sm mr-1 align-self-center" style="background-image: url(https://unidollar.network/dashboard/assets/images/us_flag.jpg)"></span>
+											<div>
+												<strong class="text-white">English</strong>
+											</div>
+										</a>
+										<div class="dropdown-menu dropdown-menu-right dropdown-menu-arrow">
+											<a href="#" class="dropdown-item d-flex pb-3">
+												<span class="avatar  mr-3 align-self-center" style="background-image: url(https://unidollar.network/dashboard/assets/images/french_flag.jpg)"></span>
+												<div>
+													<strong>French</strong>
+												</div>
+											</a>
+											<a href="#" class="dropdown-item d-flex pb-3">
+												<span class="avatar  mr-3 align-self-center" style="background-image: url(https://unidollar.network/dashboard/assets/images/germany_flag.jpg)"></span>
+												<div>
+													<strong>Germany</strong>
+												</div>
+											</a>
+											<a href="#" class="dropdown-item d-flex pb-3">
+												<span class="avatar mr-3 align-self-center" style="background-image: url(https://unidollar.network/dashboard/assets/images/italy_flag.jpg)"></span>
+												<div>
+													<strong>Italy</strong>
+												</div>
+											</a>
+											<a href="#" class="dropdown-item d-flex pb-3">
+												<span class="avatar mr-3 align-self-center" style="background-image: url(https://unidollar.network/dashboard/assets/images/russia_flag.jpg)"></span>
+												<div>
+													<strong>Russia</strong>
+												</div>
+											</a>
+											<a href="#" class="dropdown-item d-flex pb-3">
+												<span class="avatar  mr-3 align-self-center" style="background-image: url(https://unidollar.network/dashboard/assets/images/spain_flag.jpg)"></span>
+												<div>
+													<strong>Spain</strong>
+												</div>
+											</a>
+										</div>
+									</div>
+									
+								<a href="#" class="header-toggler d-lg-none ml-3 ml-lg-0" data-toggle="collapse" data-target="#headerMenuCollapse">
+								<span class="header-toggler-icon"></span>
+								</a>
+							</div>
+						</div>
+					</div>
+					<div class="admin-navbar" id="headerMenuCollapse">
+						<div class="container">
+							<ul class="nav">
+								<li class="nav-item">
+									<a class="nav-link active" href="/dashboard">
+										<i class="fa fa-home"></i>
+										<span> UNIDOLLAR DASHBOARD</span>
+									</a>
+									
+                                </li>
+                                <li class="nav-item">
+                                        <a class="nav-link" href="https://unidollar.network/dashboard" target="_blank"><i class="fa fa-pencil-square-o"></i><span>STAKING</span></a>
+                                        
+                                            </li>
+								<!--<li class="nav-item with-sub">
+									<a class="nav-link" href="#"><i class="fa fa-bar-chart"></i> <span>Dapps</span></a>
+									<div class="sub-item">
+										<ul>
+	
+											<li>
+												<a href="#">Coming Soon </a>
+											</li>
+											
+										</ul>
+									</div>-->
+									<!-- dropdown-menu -->
+								</li>
+	
+								<li class="nav-item with-sub">
+									<a class="nav-link" href="#"><i class="fa fa-snowflake-o"></i> <span>Social</span></a>
+									<div class="sub-item">
+										<ul>
+											<li>
+												<a href="https://twitter.com/unidollartoken" target="_blank">Twitter</a>
+											</li>
+	
+											<li>
+												<a href="https://reddit.com/r/unidollar" target="_blank">Reddit</a>
+											</li>
+										
+											<li>
+												<a href="https://medium.com/@unidollar" target="_blank">Medium</a>
+											</li>
+											
+										</ul>
+									</div>
+									<!-- dropdown-menu -->
+								</li>
+								<li class="nav-item">
+                                        <a class="nav-link" href="https://discord.gg/JjEQTdH" target="_blank"><i class="fa fa-pencil-square-o"></i><span>DISCORD</span></a>
+                                        
+                                            </li>
+        
+                                                            
+                                                        
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="https://t.me/unidollar" target="_blank"><i class="fa fa-pencil-square-o"></i><span>TELEGRAM</span></a>
+                                                                        
+                                            </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="https://uniswap.exchange/swap?outputCurrency=0x256845e721c0c46d54e6afbd4fa3b52cb72353ea" target="_blank"><i class="fa fa-pencil-square-o"></i><span>UNISWAP (v2)</span></a>
+                                                                        
+                                            </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="/flip" target="_blank"><i class="fa fa-pencil-square-o"></i><span>Flip Game</span></a>
+                                                                                                        
+                                            </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="#"><i class="fa fa-pencil-square-o"></i><span>TBA</span></a>
+                                                                                                                                        
+                                            </li>
+						</div>
+					</div>
+				<div class="footer">
+					<div class="card-body p-8 align-items-center text-center">
+						<img src="img/unidollar_banner.png">
+					</div>
+                </div>
+                <h2 class="text-center">YOU MUST SET SLIPPAGE TO 3% WHEN BUYING ON UNISWAP</h2>
+                <div class="my-3 my-md-5">
+                <div class="row row-cards">
+                <div class="col-md-4">
+                        <div class="card">
+                            <div class="card-header">
+                                <div class="card-title">
+                                    FIXED SUPPLY
+                                </div>
+                            </div>
+                            <div class="card-body text-center">
+                                <h5>UniDollar (UNIUSD)</h5>
+                                <h2 class="counter">125,000,000</h2>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card">
+                            <div class="card-header">
+                                <div class="card-title">
+                                    TEAM ALLOCATION
+                                </div>
+                            </div>
+                            <div class="card-body text-center">
+                                <h5>Dev Funds</h5>
+                                <h2 class="counter"> 0</h2>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card">
+                            <div class="card-header">
+                                <div class="card-title">
+                                    STAKING MINIMUM
+                                </div>
+                            </div>
+                            <div class="card-body text-center">
+                                <h5>Required Amount</h5>
+                                <h2 class="counter">20,000</h2>
+                            </div>
+                        </div>
+                      </div>
+                      </div>
+                      </div> 
+                      </div> 
+				<div class="my-3 my-md-5">
+					<div class="container">
+						
+
+						<div class="row ">
+							<div class="col-md-6 col-lg-4 features">
+								<div class="card">
+									<div class="card-body text-center">
+										<div class="feature">
+											<div class="cards-image-mask-2">
+												<img src="img/smartcontract.svg" class="cards-image-3">
+											</div>
+                                            <h3>Smart Contract Deployed</h3>
+                                            
+											<p>The UniDollar (UNIUSD) smart contract was deployed on June 11, 2020</p>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="col-md-6 col-lg-4 features">
+								<div class="card">
+									<div class="card-body text-center">
+										<div class="feature">
+                                                <div class="cards-image-mask-2">
+                                                        <img src="img/check.svg" class="cards-image-3">
+                                                </div>
+											<h3> Smart Contract Verified</h3>
+											<p>UniDollar Smart Contract verified on Etherscan on June 11, 2020</p>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="col-md-6 col-lg-4 features">
+								<div class="card">
+									<div class="card-body text-center">
+										<div class="feature">
+                                                <div class="cards-image-mask-2">
+                                                        <img src="img/trade.svg" class="cards-image-3">
+                                                </div>
+											<h3>Tokens Sent to Uniswap</h3>
+											<p>110m UniDollar Tokens sent directly to Uniswap pool.</p>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="col-md-6 col-lg-4 features">
+								<div class="card">
+									<div class="card-body text-center">
+										<div class="feature">
+                                                <div class="cards-image-mask-2">
+                                                        <img src="img/checklist.svg" class="cards-image-3">
+                                                </div>
+											<h3>Coin Tracking Listings</h3>
+											<p>
+                                                <ul>
+                                                    <li>Coingecko</li>
+                                                    <li>Coinpaprika</li>
+                                                    <li>CoinMarketCap</li>
+                                                </ul>
+                                            </p>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="col-md-6 col-lg-4 features">
+								<div class="card">
+									<div class="card-body text-center">
+										<div class="feature">
+                                                <div class="cards-image-mask-2">
+                                                        <img src="img/stake.svg" class="cards-image-3">
+                                                </div>
+											<h3>Staking Portal</h3>
+											<p>Staking portal opened to users to stake tokens and earn rewards. 20,000 UNIUSD required to earn rewards. </p>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="col-md-6 col-lg-4 features">
+								<div class="card">
+									<div class="card-body text-center">
+										<div class="feature">
+                                                <div class="cards-image-mask-2">
+                                                        <img src="img/gift.svg" class="cards-image-3">
+                                                </div>
+                                                <h3>Bonus Stake Drops</h3>
+                                                <p>15 Million UniDollar Tokens will be distributed over a period of 15 weeks to those who have their tokens staked. </p>
+                                            </div>
+									</div>
+								</div>
+							</div>
+
+						</div>
+						<div class="row">
+							<div class="col-md-12 col-lg-12">
+                                    <div class="card">
+                                            <div class="card-header">
+                                                <h3 class="card-title">FREQUENTLY ASKED QUESTIONS</h3>
+                                            </div>
+                                            <div class="card-body">
+                                                <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+                                                    <div class="panel panel-default active">
+                                                        <div class="panel-heading " role="tab" id="headingOne">
+                                                            <h4 class="panel-title">
+                                                                <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+        
+                                                                    What is UniDollar?
+                                                                </a>
+                                                            </h4>
+                                                        </div>
+                                                        <div id="collapseOne" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne">
+                                                            <div class="panel-body">
+                                                                    UniDollar is the first Proof of Liquidity (PoL) and Proof of Stake token. 110 Million (88%) of the 125,000,000 supply was sent to Uniswap. No more tokens can ever be minted.
+
+                                                                    A 2% tax is charged on each transfer which is automatically distributed as rewards to staked tokens.
+
+                                                                    15 Million (12%) of the supply has been reserved as a bonus reward for users that stake their tokens. These tokens will be distributed over a period of 12 weeks.
+
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="panel panel-default mt-2">
+                                                        <div class="panel-heading" role="tab" id="headingTwo">
+                                                            <h4 class="panel-title">
+                                                                <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+        
+                                                                    Any dApps planned for UniDollar?
+                                                                </a>
+                                                            </h4>
+                                                        </div>
+                                                        <div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
+                                                            <div class="panel-body">
+                                                                The first dapp has been released with the token as a built in feature, the staking mechanism. The goal is to release more dapps, however the code is opened
+                                                                source and ANYONE is welcome to develop around the UniDollar token.
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="panel panel-default mt-2">
+                                                        <div class="panel-heading" role="tab" id="headingThree">
+                                                            <h4 class="panel-title">
+                                                                <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+        
+                                                                    What's next for the project?
+                                                                </a>
+                                                            </h4>
+                                                        </div>
+                                                        <div id="collapseThree" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
+                                                            <div class="panel-body">
+                                                                A roadmap is coming soon for the project. Stay tuned. Join our discord channel for further updates regarding the project.
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div><!-- panel-group -->
+                                            </div>
+                                        </div>
+
+									</div>
+								</div>
+							</div>
+						</div>
+			
+            
+
+			<!--footer-->
+			<footer class="footer">
+				<div class="container">
+					<div class="row align-items-center flex-row-reverse">
+						<div class="col-lg-12 col-sm-12 mt-3 mt-lg-0 text-center">
+							Copyright © 2020 <a href="#">UniDollar</a>. All rights reserved.
+						</div>
+					</div>
+				</div>
+			</footer>
+			<!-- End Footer-->
+		</div>
+
+		<!-- Back to top -->
+		<a href="#top" id="back-to-top" style="display: inline;"><i class="fa fa-angle-up"></i></a>
+
+		<!-- Dashboard js-->
+		<script src="https://unidollar.network/dashboard/assets/js/vendors/jquery-3.2.1.min.js"></script>
+		<script src="https://unidollar.network/dashboard/assets/js/vendors/bootstrap.bundle.min.js"></script>
+		<script src="https://unidollar.network/dashboard/assets/js/vendors/jquery.sparkline.min.js"></script>
+		<script src="https://unidollar.network/dashboard/assets/js/vendors/selectize.min.js"></script>
+		<script src="https://unidollar.network/dashboard/assets/js/vendors/jquery.tablesorter.min.js"></script>
+		<script src="https://unidollar.network/dashboard/assets/js/vendors/circle-progress.min.js"></script>
+		<script src="https://unidollar.network/dashboard/assets/plugins/rating/jquery.rating-stars.js"></script>
+		<!-- Custom js -->
+		<script src="https://unidollar.network/dashboard/assets/js/custom.js"></script>
+	</body>
+</html>
