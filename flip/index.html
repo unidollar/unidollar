@@ -1,0 +1,474 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>UniDollar | Flip</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link rel="shortcut icon" href="favicon.ico">
+  <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700" rel="stylesheet">
+  <link rel="stylesheet" href="https://pyro.network/assets/vendor/font-awesome/css/fontawesome-all.min.css">
+  <link rel="stylesheet" href="https://pyro.network/assets/vendor/animate.css/animate.min.css">
+  <link rel="stylesheet" href="https://pyro.network/assets/vendor/hs-megamenu/src/hs.megamenu.css">
+  <link rel="stylesheet" href="https://pyro.network/assets/vendor/malihu-custom-scrollbar-plugin/jquery.mCustomScrollbar.css">
+  <link rel="stylesheet" href="https://pyro.network/assets/vendor/fancybox/jquery.fancybox.css">
+  <link rel="stylesheet" href="https://pyro.network/assets/vendor/slick-carousel/slick/slick.css">
+  <link rel="stylesheet" href="https://unidollar.network/flip/style.css">
+  <!--Twitter Opengraph-->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:site" content="@UniDollarToken">
+  <meta name="twitter:creator" content="@UniDollarToken">
+  <meta name="twitter:title" content="UniDollar | Flip Game!">
+  <meta name="twitter:description" content="Flip cards, earn rewards, fight for the jackpot!">
+  <meta name="twitter:image" content="https://i.imgur.com/uRadCDW.jpg">
+  <!--Facebook Opengraph-->
+  <meta property="og:url" content="/" />
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="UniDollar | Flip Game!" />
+  <meta property="og:description" content="Flip cards, earn rewards, fight for the jackpot!" />
+  <meta property="og:image" content="https://i.imgur.com/uRadCDW.jpg" />
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-155219102-1"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+    gtag('js', new Date());
+
+    gtag('config', 'UA-155219102-1');
+  </script>
+</head>
+
+<body>
+  <header id="header" class="u-header u-header--abs-top-md u-header--bg-transparent u-header--show-hide-md" data-header-fix-moment="500" data-header-fix-effect="slide">
+    <div class="u-header__section">
+      <div id="logoAndNav" class="container">
+        <nav class="navbar navbar-expand-md u-header__navbar u-header__navbar--no-space">
+          <div class="d-flex">
+            <a class="navbar-brand u-header__navbar-brand u-header__navbar-brand-center" href="/" aria-label="pyro"> <svg width="19" height="36" xmlns="http://www.w3.org/2000/svg">
+                                    
+                                </svg> <span class="u-header__navbar-brand-text">UNIDOLLAR</span> </a>
+            <div class="bd-highlight">
+              <div class="btn-group tform">
+                <button type="button" style="border: none;" class="btn-language dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="background: transparent; color: #777; border: 1px solid #ced4da; text-transform: uppercase;">
+                                        🇬🇧 EN
+</button>
+                <div class="dropdown-menu">
+                  <a href="#" onclick="doGTranslate('en|en');return false;" title="English" class="dropdown-item glink nturl notranslate">🇬🇧 EN</a>
+                  <a href="#" onclick="doGTranslate('en|zh-CN');return false;" title="Chinese (Simplified)" class="dropdown-item glink nturl notranslate">🇨🇳 中文</a>
+                  <a href="#" onclick="doGTranslate('en|ko');return false;" title="Korean" class="dropdown-item glink nturl notranslate">🇰🇷 한국어</a>
+                  <a href="#" onclick="doGTranslate('en|ja');return false;" title="Japanese" class="dropdown-item glink nturl notranslate">🇯🇵 日本人</a>
+                  <a href="#" onclick="doGTranslate('en|ru');return false;" title="Russian" class="dropdown-item glink nturl notranslate">🇷🇺 PYC</a>
+                  <a href="#" onclick="doGTranslate('en|ko');return false;" title="Korean" class="dropdown-item glink nturl notranslate">🇧🇴 ES</a>
+                </div>
+              </div>
+              </ul>
+            </div>
+          </div>
+          <button type="button" class="navbar-toggler btn u-hamburger" aria-label="Toggle navigation" aria-expanded="false" aria-controls="navBar" data-toggle="collapse" data-target="#navBar">
+                    <span id="hamburgerTrigger" class="u-hamburger__box"> <span class="u-hamburger__inner"></span> </span>
+                </button>
+          <div id="navBar" class="collapse navbar-collapse u-header__navbar-collapse">
+            <ul class="navbar-nav u-header__navbar-nav">
+              <li class="nav-item u-header__nav-item" data-event="hover" data-animation-in="slideInUp" data-animation-out="fadeOut" data-position="left">
+                <a class="nav-link u-header__nav-link text-truncate" href="https://unidollar.network" aria-haspopup="true" aria-expanded="false">Home</a>
+              </li>
+              <li class="nav-item u-header__nav-item" data-event="hover" data-animation-in="slideInUp" data-animation-out="fadeOut" data-position="left">
+                <a class="nav-link u-header__nav-link text-truncate" href="https://unidollar.network/dashboard" aria-haspopup="true" aria-expanded="false">Staking</a>
+              </li>
+              <li class="nav-item u-header__nav-item" data-event="hover" data-animation-in="slideInUp" data-animation-out="fadeOut" data-position="left">
+                <a class="nav-link u-header__nav-link text-truncate" href="https://uniswap.exchange/swap?outputCurrency=0x256845e721c0c46d54e6afbd4fa3b52cb72353ea" aria-haspopup="true" aria-expanded="false">Uniswap</a>
+              </li>
+              <li class="nav-item u-header__nav-item d-none" data-event="hover" data-animation-in="slideInUp" data-animation-out="fadeOut" data-position="left">
+                <a class="nav-link u-header__nav-link text-truncate" href="" aria-haspopup="true" aria-expanded="false">Roadmap</a>
+              </li>
+              <li class="nav-item u-header__nav-item" data-event="hover" data-animation-in="slideInUp" data-animation-out="fadeOut" data-position="left">
+                <a class="nav-link u-header__nav-link text-truncate" href="https://etherscan.io/token/0x256845e721c0c46d54e6afbd4fa3b52cb72353ea" aria-haspopup="true" aria-expanded="false">Explorer</a>
+              </li>
+              <!--<li class="nav-item u-header__nav-item" data-event="hover" data-animation-in="slideInUp" data-animation-out="fadeOut" data-position="left">
+                <a class="nav-link u-header__nav-link text-truncate" href="https://medium.com/@pyronetwork" aria-haspopup="true" aria-expanded="false">Medium</a>
+              </li>-->
+              <li class="nav-item u-header__nav-item" data-event="hover" data-animation-in="slideInUp" data-animation-out="fadeOut" data-position="left">
+                  <a class="nav-link u-header__nav-link text-truncate dropdown-toggle" data-toggle="dropdown" href="#" aria-haspopup="true" aria-expanded="false">More</a>
+
+              
+                <div class="dropdown-menu">
+                  <a href="#" title="PYRO War!" class="dropdown-item">Game: Flip!</a>
+                  <a href="#" title="Korean" class="dropdown-item">Privacy Policy</a>
+                  
+                </div>
+              </li>
+              <li class="nav-item u-header__nav-last-item">
+                <a class="btn pr-0 pt-4 transition-3d-hover" href="https://discord.gg/JjEQTdH" target="_blank"> <i class="fab fa-discord fa-lg"></i> </a>
+                <a class="btn pt-4 transition-3d-hover" href="https://t.me/unidollar" target="_blank"> <i class="fab fa-telegram fa-lg"></i> </a>
+              </li>
+        </nav>
+        </div>
+      </div>
+      <style type="text/css">
+        #goog-gt-tt {
+          display: none !important;
+        }
+
+        .goog-te-banner-frame {
+          display: none !important;
+        }
+
+        .goog-te-menu-value:hover {
+          text-decoration: none !important;
+        }
+
+        .goog-text-highlight {
+          background-color: transparent !important;
+          box-shadow: none !important;
+        }
+
+        body {
+          top: 0 !important;
+        }
+
+        #google_translate_element2 {
+          display: none !important;
+        }
+      </style>
+      <div id="google_translate_element2"></div>
+      <script type="text/javascript">
+        function googleTranslateElementInit2() {
+          new google.translate.TranslateElement({
+            pageLanguage: 'en',
+            autoDisplay: false
+          }, 'google_translate_element2');
+        }
+      </script>
+      <script type="text/javascript" src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit2"></script>
+      <script type="text/javascript">
+        function GTranslateGetCurrentLang() {
+          var keyValue = document['cookie'].match('(^|;) ?googtrans=([^;]*)(;|$)');
+          return keyValue ? keyValue[2].split('/')[2] : null;
+        }
+
+        function GTranslateFireEvent(element, event) {
+          try {
+            if (document.createEventObject) {
+              var evt = document.createEventObject();
+              element.fireEvent('on' + event, evt)
+            } else {
+              var evt = document.createEvent('HTMLEvents');
+              evt.initEvent(event, true, true);
+              element.dispatchEvent(evt)
+            }
+          } catch (e) {}
+        }
+
+        function doGTranslate(lang_pair) {
+          if (lang_pair.value) lang_pair = lang_pair.value;
+          if (lang_pair == '') return;
+          var lang = lang_pair.split('|')[1];
+          if (GTranslateGetCurrentLang() == null && lang == lang_pair.split('|')[0]) return;
+          if (typeof ga != 'undefined') {
+            ga('send', 'event', 'GTranslate', lang, location.hostname + location.pathname + location.search);
+          } else {
+            if (typeof _gaq != 'undefined') _gaq.push(['_trackEvent', 'GTranslate', lang, location.hostname + location.pathname + location.search]);
+          }
+          var teCombo;
+          var sel = document.getElementsByTagName('select');
+          for (var i = 0; i < sel.length; i++)
+            if (/goog-te-combo/.test(sel[i].className)) {
+              teCombo = sel[i];
+              break;
+            }
+          if (document.getElementById('google_translate_element2') == null || document.getElementById('google_translate_element2').innerHTML.length == 0 || teCombo.length == 0 || teCombo.innerHTML.length == 0) {
+            setTimeout(function() {
+              doGTranslate(lang_pair)
+            }, 500)
+          } else {
+            teCombo.value = lang;
+            GTranslateFireEvent(teCombo, 'change');
+            GTranslateFireEvent(teCombo, 'change')
+          }
+        }
+      </script>
+    </div>
+  </header>
+  <main id="content" role="main">
+    <div class="position-relative bg-light war_bg overflow-hidden" style="">
+      <div class="container space-top-1 space-bottom-3 space-top-md-3 space-top-lg-3">
+        <div class="position-relative">
+          <!-- Title -->
+          <div class="w-md-80 w-lg-60 text-center mx-auto" id="inRound">
+            <h1 class="display-4 font-size-md-down-5 text-primary">UniDollar <span class="font-weight-semi-bold">Flip!</span></h1>
+            <p class="lead"><span class="current">-</span> is winning</p>
+            <div class="text-center p-2 card">
+              <div class="row align-items-center no-gutters">
+                <div class="col-6 u-ver-divider">
+                  <h5 class="small font-weight-normal text-secondary mb-0">Remaining Until Victory</h5>
+                  <h6 id="timeLeft"></h6>
+                </div>
+                <div class="col-6">
+                  <h5 class="small font-weight-normal text-secondary mb-0">Jackpot Prize</h5>
+                  <span class="jackpot text-dark text-truncate">...</span> UNIUSD
+                </div>
+              </div>
+            </div>
+            <div class="text-center p-2 card my-2">
+              <div class="row align-items-center no-gutters">
+                <div class="col-6 u-ver-divider">
+                  <h5 class="small font-weight-normal text-secondary mb-0">My Tokens</h5>
+                  <span class="text-dark text-truncate" id="tokens">...</span> UNIUSD
+                </div>
+                <div class="col-6">
+                  <h5 class="small font-weight-normal text-secondary mb-0">My Dividends</h5>
+                  <span class="text-dark text-truncate" id="withdrawable">...</span> UNIUSD
+                </div>
+              </div>
+            </div>
+            </div>
+
+            <div class="w-md-80 w-lg-60 text-center mx-auto" id="inWait">
+              <h1 class="display-4 font-size-md-down-5 text-primary">UniDollar <span class="font-weight-semi-bold">Flip!</span></h1>
+              <p class="lead"><span class="current">-</span> Won the Game!</p>
+              <div class="text-center p-2 card">
+                <div class="row align-items-center no-gutters">
+                  <div class="col-6 u-ver-divider">
+                    <h5 class="small font-weight-normal text-secondary mb-0">Time Until Next Game</h5>
+                    <h6 id="resetTime"></h6>
+                  </div>
+                  <div class="col-6">
+                    <h5 class="small font-weight-normal text-secondary mb-0">Jackpot Prize</h5>
+                    <span class="jackpot text-dark text-truncate">...</span> UNIUSD
+                  </div>
+                </div>
+              </div>
+              <div class="text-center p-2 card my-2">
+                <div class="row align-items-center no-gutters">
+                  <div class="col-6 u-ver-divider">
+                    <h5 class="small font-weight-normal text-secondary mb-0">My Tokens</h5>
+                    <span class="text-dark text-truncate" id="tokens">...</span> UNIUSD
+                  </div>
+                  <div class="col-6">
+                    <h5 class="small font-weight-normal text-secondary mb-0">My Dividends</h5>
+                    <span class="text-dark text-truncate" id="withdrawable">...</span> UNIUSD
+                  </div>
+                </div>
+              </div>
+              
+
+
+            <a class="mt-4 list-inline-item btn btn-primary btn-sm  transition-3d-hover" href="" data-target="" data-type="" style="display: inline-block;" id="reset">Start Next Round</a>
+            <a class="withdraw mt-4 list-inline-item btn btn-soft-primary btn-sm  transition-3d-hover" href="" data-target="" data-type="" style="display: inline-block;">Withdraw Dividends</a>
+          </div>
+
+          
+
+          <figure class="d-none d-sm-block position-absolute bottom-0 left-0" style="width: 100px;">
+            <img src="https://i.imgur.com/PI72At9.png" alt="Image Description" width="100%">
+          </figure>
+          <figure class="d-none d-sm-block position-absolute top-0 right-0" style="width: 100px;">
+            <img src="https://i.imgur.com/PI72At9.png" alt="" width="100%">
+          </figure>
+        </div>
+      </div>
+    </div>
+         
+    
+    <div class="container mb-7">
+      <ul class="text-center mt-5 list-inline mb-4">
+        <p>
+            
+          <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
+            HOW TO PLAY (Click Me)
+          </button>
+        </p>
+        <div class="collapse" id="collapseExample">
+          <div class="card card-body">
+            <ul>
+              <li>You must have Metamask, TrustWallet (Mobile) or any compatible ERC20 browser wallet, PYRO Tokens and ETH for gas to play!</li>
+              <li>Your UNIUSD must be free and available for use. What you intend to play with must not be staked.</li>
+              <li>Buy a card using UNIUSD to become the owner of the card and set the timer for the round. Each time a card is purchased, the time is changed.</li>
+              <li>The card you own determines the amount of shares you have which determines the amount of dividends you receive from cards flipping.</li>
+              <li>75% of the card purchase goes to the previous owner, 12.5% is distributed in divs to the other card owners, and 12.5% goes toward the jackpot.</li>
+              <li>The last person to buy a card with no buys after them before the timer runs out wins the jackpot.</li>
+              <li>There is a 10 minute cool down between each round and any player can click "Start New Round" to begin another round.</li>
+              <li>Card owners from the previous round remain as the card owners for the next round until a card is bought from them.</li>
+              </ul>
+          </div>
+        </div>
+        <p>            <a class="withdraw mt-4 list-inline-item btn btn-soft-primary btn-sm  transition-3d-hover" href="" data-target="" data-type="" style="display: inline-block;">Withdraw Dividends</a>
+        </p>
+        
+        <!--<li class="list-inline-item cbp-filter-item tab-active" data-filter=""><a class="nav-link active" href="#cards" filter="all">All</a></li>
+        <li class="list-inline-item cbp-filter-item" data-filter=""><a class="nav-link" href="#cards" filter="cheap">Cheapest</a></li>-->
+      </ul>
+      
+      <div class="row align-items-center text-center" id="render"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+  </main>
+  <footer>
+    <div class="border-bottom">
+      <div class="container space-2">
+        <div class="row justify-content-md-between">
+          <div class="col-sm-4 col-lg-2 mb-4 mb-lg-0">
+            <h4 class="h6 font-weight-semi-bold">Social</h4>
+            <ul class="list-group list-group-flush list-group-borderless mb-0">
+              <li>
+                <a class="list-group-item list-group-item-action" href="https://discord.gg/JjEQTdH">Discord</a>
+              </li>
+              <li>
+                <a class="list-group-item list-group-item-action" href="https://t.me/unidollar">Telegram</a>
+              </li>
+              <li>
+                <a class="list-group-item list-group-item-action" href="https://twitter.com/unidollartoken">Twitter</a>
+              </li>
+            </ul>
+          </div>
+          <div class="col-sm-4 col-lg-2 mb-4 mb-lg-0">
+            <h4 class="h6 font-weight-semi-bold">UniDollar</h4>
+            <ul class="list-group list-group-flush list-group-borderless mb-0">
+              <li>
+                <a class="list-group-item list-group-item-action" href="#">Web Wallet</a>
+              </li>
+              <li>
+                <a class="list-group-item list-group-item-action" href="#">UniDollar Token</a>
+              </li>
+              <li>
+                <a class="list-group-item list-group-item-action" href="#">FAQ</a>
+              </li>
+            </ul>
+          </div>
+          <div class="col-sm-4 col-lg-2 mb-4 mb-lg-0">
+            <h4 class="h6 font-weight-semi-bold">Resources</h4>
+            <ul class="list-group list-group-flush list-group-borderless mb-0">
+              <li>
+                <a class="list-group-item list-group-item-action" href="https://medium.com/@unidollar">Medium</a>
+              </li>
+              <li>
+                <a class="list-group-item list-group-item-action" href="https://reddit.com/r/unidollar">Reddit</a>
+              </li>
+            </ul>
+          </div>
+          <div class="col-md-6 col-lg-4">
+            <h4 class="h6 font-weight-semi-bold mb-4">We would love to hear from you and your thoughts about our token</h4>
+            <a class="btn btn-soft-primary btn-wide transition-3d-hover" href="mailto:info@unidollar.network">Contact Us</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="container text-center space-1">
+      <a class="d-inline-flex align-items-center mb-2" href="#" aria-label="pyro"> <svg width="19" height="36" xmlns="http://www.w3.org/2000/svg">
+                    
+                    
+                </svg> <span class="brand brand-primary">UNIDOLLAR</span> </a>
+      <p class="small text-muted">&copy; UniDollar 2020. All rights reserved.</p>
+    </div>
+  </footer>
+  <script src="https://pyro.network/assets/vendor/jquery/dist/jquery.min.js"></script>
+  <script src="https://pyro.network/assets/vendor/jquery-migrate/dist/jquery-migrate.min.js"></script>
+  <script src="https://pyro.network/assets/vendor/popper.js/dist/umd/popper.min.js"></script>
+  <script src="https://pyro.network/assets/vendor/bootstrap/bootstrap.min.js"></script>
+  <!-- JS Implementing Plugins -->
+  <script src="https://pyro.network/assets/vendor/svg-injector/dist/svg-injector.min.js"></script>
+  <script src="https://pyro.network/assets/vendor/malihu-custom-scrollbar-plugin/jquery.mCustomScrollbar.concat.min.js"></script>
+  <script src="https://pyro.network/assets/vendor/jquery-validation/dist/jquery.validate.min.js"></script>
+  <script src="https://pyro.network/assets/vendor/fancybox/jquery.fancybox.min.js"></script>
+  <script src="https://pyro.network/assets/vendor/typed.js/lib/typed.min.js"></script>
+  <script src="https://pyro.network/assets/vendor/slick-carousel/slick/slick.js"></script>
+  <!-- JS pyro -->
+  <script src="https://pyro.network/assets/js/hs.core.js"></script>
+  <script src="https://pyro.network/assets/js/components/hs.header.js"></script>
+  <script src="https://pyro.network/assets/js/components/hs.unfold.js"></script>
+  <script src="https://pyro.network/assets/js/components/hs.focus-state.js"></script>
+  <script src="https://pyro.network/assets/js/components/hs.malihu-scrollbar.js"></script>
+  <script src="https://pyro.network/assets/js/components/hs.validation.js"></script>
+  <script src="https://pyro.network/assets/js/components/hs.fancybox.js"></script>
+  <script src="https://pyro.network/assets/js/components/hs.slick-carousel.js"></script>
+  <script src="https://pyro.network/assets/js/components/hs.show-animation.js"></script>
+  <script src="https://pyro.network/assets/js/components/hs.svg-injector.js"></script>
+  <script src="https://pyro.network/assets/js/components/hs.go-to.js"></script>
+  <!--<script src="../../assets/js/main.js"></script>-->
+  <!-- JS Plugins Init. -->
+  <script>
+    $(window).on('load', function() {
+      // initialization of HSMegaMenu component
+      $('.js-mega-menu').HSMegaMenu({
+        event: 'hover',
+        pageContainer: $('.container'),
+        breakpoint: 767.98,
+        hideTimeOut: 0
+      });
+
+      // initialization of svg injector module
+      $.HSCore.components.HSSVGIngector.init('.js-svg-injector');
+    });
+
+    $(document).on('ready', function() {
+      // initialization of header
+      $.HSCore.components.HSHeader.init($('#header'));
+
+      // initialization of unfold component
+      $.HSCore.components.HSUnfold.init($('[data-unfold-target]'), {
+        afterOpen: function() {
+          $(this).find('input[type="search"]').focus();
+        }
+      });
+
+      // initialization of malihu scrollbar
+      $.HSCore.components.HSMalihuScrollBar.init($('.js-scrollbar'));
+
+      // initialization of forms
+      $.HSCore.components.HSFocusState.init();
+
+      // initialization of form validation
+      $.HSCore.components.HSValidation.init('.js-validate', {
+        rules: {
+          confirmPassword: {
+            equalTo: '#signupPassword'
+          }
+        }
+      });
+
+      // initialization of show animations
+      $.HSCore.components.HSShowAnimation.init('.js-animation-link');
+
+      // initialization of fancybox
+      $.HSCore.components.HSFancyBox.init('.js-fancybox');
+
+      // initialization of text animation (typing)
+      var typed = new Typed(".u-text-animation.u-text-animation--typing", {
+        strings: ["more professional.", "perfect in every way.", "astonishing."],
+        typeSpeed: 60,
+        loop: true,
+        backSpeed: 25,
+        backDelay: 1500
+      });
+
+      // initialization of slick carousel
+      $.HSCore.components.HSSlickCarousel.init('.js-slick-carousel');
+
+      // initialization of go to
+      $.HSCore.components.HSGoTo.init('.js-go-to');
+    });
+  </script>
+
+<script
+src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"
+integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+crossorigin="anonymous"
+></script>
+<script
+src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"
+integrity="sha256-4iQZ6BVL4qNKlQ27TExEhBN1HFPvAvAMbFavKKosSWQ="
+crossorigin="anonymous"
+></script>
+<script
+src="https://cdnjs.cloudflare.com/ajax/libs/moment-duration-format/2.3.2/moment-duration-format.min.js"
+integrity="sha256-M2KULKSJyw+G0068JiMlM9GX4XpLdUButSzBqntKDZM="
+crossorigin="anonymous"
+></script>
+<script src="https://unidollar.network/flip/web3.js"></script>
+<script src="https://unidollar.network/flip/flip.js"></script>
+</body>
